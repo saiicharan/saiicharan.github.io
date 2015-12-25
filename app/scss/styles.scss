@@ -1,0 +1,62 @@
+@font-face {
+	font-family: "Pier Sans";
+	src: url(fonts/pier-regular.otf);
+}
+
+
+$white:#fff;
+
+body{
+	background-color:black;
+	color: $white;
+	text-align: center;
+	font-family: "Pier Sans"
+;}
+
+header {
+	ul {
+		margin: 0;
+		padding: 0;		
+		li {
+			list-style-type: none;
+			display: inline-block;
+			padding: 20px 20px;
+			a {
+				color: $white;
+				&:hover {
+					transition:#ccc 3s ease-in;
+					border-bottom: 1px solid #eee;
+
+				}
+			}
+		}
+	}
+}
+
+section {
+	img {
+		width: 200px;
+		height: 250px;
+		border-radius: 50%;
+	}
+}
+
+footer {
+	ul {
+		margin: 0;
+		padding: 0;		
+		li {
+			list-style-type: none;
+			display: inline-block;
+			padding: 20px 20px;
+			a {
+				color: $white;
+				&:hover {
+					transition:#ccc 3s ease-in;
+					border-bottom: 1px solid #eee;
+
+				}
+			}
+		}
+	}
+}
