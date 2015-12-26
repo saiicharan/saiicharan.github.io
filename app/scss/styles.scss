@@ -24,14 +24,44 @@ header {
 			a {
 				color: $white;
 				&:hover {
-					transition:#ccc 3s ease-in;
-					border-bottom: 1px solid #eee;
+				 border-bottom:2px solid #eee;
+				  transition:0.9s ease;
 
 				}
 			}
 		}
 	}
 }
+
+.image{
+	width: 600px;
+	height: 300px;
+	margin:auto;
+}
+
+#motion {
+	animation: bobble 2s infinite;
+
+}
+
+@keyframes bobble {
+	0% {
+		transform: translate3d(25px,40px,0px);
+		animating-timing-function:ease-in;
+	}
+	50% {
+		transform: translate3d(25px,50px,0px);
+		animating-timing-function:ease-out;
+	}
+	70% {
+		transform: translate3d(25px,30px,0px);
+		animating-timing-function:ease-out;
+	}		
+	100% {
+		transform:translate3d(25px,40px,0px);
+	}
+}
+
 
 section {
 	img {
@@ -42,6 +72,7 @@ section {
 }
 
 footer {
+	margin-top:50px;
 	ul {
 		margin: 0;
 		padding: 0;		
@@ -52,8 +83,8 @@ footer {
 			a {
 				color: $white;
 				&:hover {
-					transition:#ccc 3s ease-in;
-					border-bottom: 1px solid #eee;
+					 border-bottom:2px solid #eee;
+					  transition:0.9s ease;
 
 				}
 			}
