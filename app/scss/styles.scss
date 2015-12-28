@@ -1,19 +1,114 @@
+/*  RESET - http://meyerweb.com/eric/tools/css/reset/   */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*  BOX SIZING & CLEARFIX */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* END OF BOX SIZING & CLEARFIX */
+
 @font-face {
 	font-family: "Pier Sans";
 	src: url(fonts/pier-regular.otf);
 }
 
+a{
+	text-decoration: none;
+}
+
+a:hover{
+ color:#339933;
+ transition:0.9s ease;
+}
+
+a:visited {
+	color: gray;
+}
 
 $white:#fff;
 
-body{
-	background-color:black;
+body {
 	color: $white;
-	text-align: center;
-	font-family: "Pier Sans"
-;}
+	font-family: "Pier Sans";
+}
+
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.container {
+	width: 100%;
+	max-width: 1360px;
+	margin: 0 auto;
+}
 
 header {
+	width:100%;
+	text-align: center;
+	color: #fff;
+	background-color: #000;
+	margin: 0;
+	opacity: 0.5;
+	position: fixed;
 	ul {
 		margin: 0;
 		padding: 0;		
@@ -21,10 +116,11 @@ header {
 			list-style-type: none;
 			display: inline-block;
 			padding: 20px 20px;
+			box-sizing:border-box;
 			a {
 				color: $white;
 				&:hover {
-				 border-bottom:2px solid #eee;
+				 color:#339933;
 				  transition:0.9s ease;
 
 				}
@@ -33,61 +129,114 @@ header {
 	}
 }
 
-.image{
-	width: 600px;
-	height: 300px;
-	margin:auto;
+section.module:last-child {
+	margin-bottom: 0;
 }
 
-#motion {
-	animation: bobble 2s infinite;
-
+section.module h2 {
+	margin-bottom: 40px;
+	font-size: 30px;
 }
 
-@keyframes bobble {
-	0% {
-		transform: translate3d(25px,40px,0px);
-		animating-timing-function:ease-in;
-	}
-	50% {
-		transform: translate3d(25px,50px,0px);
-		animating-timing-function:ease-out;
-	}
-	70% {
-		transform: translate3d(25px,30px,0px);
-		animating-timing-function:ease-out;
-	}		
-	100% {
-		transform:translate3d(25px,40px,0px);
-	}
+section.module p {
+	margin-bottom: 40px;
+	font-size: 17px;
+}
+
+section.module p:last-child {
+	margin-bottom: 0;
+}
+
+section.module.content {
+	color: black;
+	margin:0 auto;
+	padding:40px;
+	font-family: 'Roboto Slab';
+	line-height: 50px;
+	text-align: justify;
+}
+
+section.module.parallax {
+	height:600px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);	
+  font-size: 50px;
+  line-height: 500px;
+  padding: 15px;
+  box-sizing:border-box;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  
+}
+
+blockquote {
+width: 100%;
+margin: 0.25em 0;
+padding: 0.25em 40px;
+line-height: 1.45;
+position: relative;
+color: #383838;
+}
+blockquote:before {
+display: block;
+content: "\201C";
+font-size: 80px;
+position: absolute;
+left: -20px;
+top: -20px;
+color: #7a7a7a;
+}
+blockquote cite {
+color: #1f1f1f;
+font-style: italic;
+font-size: 16px;
+display: block;
+margin-top: 5px;
+}
+ 
+blockquote cite:before {
+content: "\2014 \2009";
+}
+
+section.module.parallax-1 {
+  background-image: url("images/Sai.jpg");
+}
+
+section.module.parallax-2 {
+  background-image: url("images/me2.jpg");
+}
+
+section.module.parallax-3 {
+  background-image: url("images/shawshank.jpg");
+}
+
+section.module.parallax-4 {
+  background-image: url("images/all.jpg");
+}
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+    text-align: center;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 100px;
+    text-align: center;
+  }
 }
 
 
-section {
-	img {
-		width: 200px;
-		height: 250px;
-		border-radius: 50%;
-	}
-}
 
-footer {
-	margin-top:50px;
-	ul {
-		margin: 0;
-		padding: 0;		
-		li {
-			list-style-type: none;
-			display: inline-block;
-			padding: 20px 20px;
-			a {
-				color: $white;
-				&:hover {
-					 border-bottom:2px solid #eee;
-					  transition:0.9s ease;
-
-				}
-			}
-		}
-	}
-}
