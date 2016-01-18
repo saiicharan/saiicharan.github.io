@@ -131,7 +131,7 @@ section.module.parallax {
 
 section.module.parallax h1 {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 50px;
+  font-size: 90px;
   line-height: 500px;
   padding: 15px;
   box-sizing: border-box;
@@ -180,6 +180,15 @@ section.module.parallax-1 {
 
 section.module.parallax-2 {
   background-image: url("images/me2.jpg"); }
+.pulp {
+   background-image: url("images/pulp.png");
+}  
+
+.container img{
+  width: 600px;
+  height: 400px;
+  float: right;
+}
 
 section.module.parallax-3 {
   background-image: url("images/shawshank.jpg"); }
