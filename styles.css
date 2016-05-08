@@ -1,20 +1,117 @@
 body {
-	background-color:#348fd4;
-	font-family: 'Chelsea Market';
+  font-family: 'Quicksand';
 }
-h1 {
-	text-align: center;
-	color: #fff;
+.header {
+  text-align: center;
+  color: #33C3F0;
 }
-img {
-	width: 50%;
-	height: 50%;
-	margin:0 25%;
+a {
+  color: #33C3F0;
+  text-decoration: none;
 }
-h1 a {
-	color: #fff;
-}	
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+.left-column {
+  width: 50%;
+  float: left;
+}
+.right-column {
+  width: 50%;
+  float: left;
+}
+.smiley {
+  width: 200px;
+  height: 200px;
+  background: #ffcc00;
+  float: left;
+  margin-left: 30px;
+  border-radius: 50%;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+          box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.eyes {
+  width: 20px;
+  height: 20px;
+  background: black;
+  margin: 20% 15% 15px 21%;
+  border-radius: 50%;
+  display:inline-block;
+}
 
-h1 a:hover {
-	color: #012F52;
+.blink {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: blink;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    65% {
+        opacity: 1;
+    }
+    70% {
+      opacity: 0.75;
+    }
+    76% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.mouth {
+  width: 150px;
+  height: 90px;
+  margin: 10px auto;
+  background: black;
+  -webkit-border-radius: 0 0 90px 90px;
+     -moz-border-radius: 0 0 90px 90px;
+          border-radius: 0 0 90px 90px;
+}
+.teeth {
+  width: 125px;
+  height: 25px;
+  display: inline-block;
+  margin: 0 8.5%;
+  background: white;
+  -webkit-border-radius: 0 0 60px 60px;
+     -moz-border-radius: 0 0 60px 60px;
+          border-radius: 0 0 60px 60px;
+}
+
+.about {
+  width: 250px;
+  border-radius: 4px;
+  background: #33C3F0;
+  color: #fff;
+  padding: 10px;
+  line-height: 25px;
+  text-align: center;
+  float: left;
+  margin-top: 30px;
+}
+.about:hover {
+  background: #1EAEDB;
+}
+
+.code {
+  min-width: 500px;
+  min-height: 500px;
+  background: #f1f1f1;
+  float: right;
+  border-radius: 10px;
+  font-size: 1rem;
+  border: 1px solid #e1e1e1;
+}
+
+pre > .code {
+  display: block;
+  white-space: pre;
+  padding: 1rem 1.5rem;
 }
