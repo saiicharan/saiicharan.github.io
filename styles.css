@@ -101,7 +101,7 @@ a {
 }
 
 .code {
-  min-width: 500px;
+  max-width: 500px;
   min-height: 500px;
   background: #f1f1f1;
   float: right;
@@ -114,4 +114,32 @@ pre > .code {
   display: block;
   white-space: pre;
   padding: 1rem 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    text-align: justify;
+    font-size: 2rem;
+  }
+  .container {
+    width: 100%;
+  }
+  .left-column {
+    float: none;
+    display: block;
+  }
+  .right-column {
+    display: block;
+  }
+  .code {
+    float: none;
+    min-width: 400px;
+    font-size: 0.8em;
+  }
+  pre > .code {
+    display: block;
+    white-space: pre;
+    padding: 0;
+  }
+
 }
