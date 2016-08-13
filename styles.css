@@ -146,7 +146,7 @@ pre > .code {
     display: block;
     white-space: pre;
     padding: 0;
-    min-width: 300px;
+    min-height: 320px;
     min-height: 200px;
     font-size: 8.5px;
   }
