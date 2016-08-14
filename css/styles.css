@@ -50,11 +50,11 @@ a:hover {
 	left: 51px;
 }
 .about {
-  width: 60%;
+  width: 65%;
   color: #fff;
   position: absolute;
-  top: 65px;
-  right: 0;
+  top: 75px;
+  right: -20px;
   font-size: 1em;
 }
 .contact {
