@@ -53,12 +53,12 @@ a:hover {
   width: 60%;
   color: #fff;
   position: absolute;
-  top: 75px;
-  right: 12px;
+  top: 65px;
+  right: 0;
   font-size: 1em;
 }
 .contact {
-	width: 70%;
+	width: 80%;
 	margin: 0 auto;
 	font-family: 'Fjalla One', serif;
 }
@@ -250,7 +250,7 @@ footer {
 }
 .copyright {
 	width: 90%;
-	padding-top: 50%;
+	padding-top: 56%;
 	margin: 0 auto;
 }
 .copyright p {
