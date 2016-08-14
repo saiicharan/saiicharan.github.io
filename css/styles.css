@@ -285,7 +285,7 @@ footer .contact li {
 	}
 	.about {
 		top: 70px;
-		right: 30px;
+		right: 0;
 		font-size: 2em;
 	}
 	.contact {
