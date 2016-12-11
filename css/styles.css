@@ -16,7 +16,7 @@ body {
 
 h1 {
   text-shadow: 2px 2px #000000;
-  font-size: 5em;
+  font-size: 3em;
   margin: 0;
   color: #ffffff;
 }
@@ -28,15 +28,20 @@ h1 {
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 1em;
   margin: 0 auto;
-  width: 75%;
+  width: 90%;
 }
 
 .social {
-  width: 100%;
-  margin: 10% auto;
+  width: 70%;
+  margin: 5% auto;
   font-size: 1rem;
+}
+
+.social ul {
+  margin-top: 0;
+  padding: 0;
 }
 
 .social li {
