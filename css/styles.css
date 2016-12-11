@@ -76,6 +76,10 @@ p {
   border-bottom: 2px solid #007bb6;
 }
 
+.copyright {
+  font-size: 0.8em;
+}
+
 @media (min-width: 601px) and (max-width: 1130px) {
   h1 {
     line-height: 0.8em !important;
