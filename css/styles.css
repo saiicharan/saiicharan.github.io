@@ -45,25 +45,31 @@ a {
   min-width: 60px;
   height: 30px;
   margin: auto;
+  list-style-type: none;
 }
 
 .follow li a {
   cursor: pointer;
+  border-bottom: 1px solid #000000;
   transition: 0.3s all;
 }
 
 .twitter:hover {
   color: #1da1f2;
+  border-bottom: 1px solid #1da1f2;
 }
 
 .github:hover {
   color: #000000;
+  border-bottom: 1px solid #000000;
 }
 
 .instagram:hover {
   color: #7f39b0;
+  border-bottom: 1px solid #7f39b0;
 }
 
 .linkedin:hover {
   color: #007bb6;
+  border-bottom: 1px solid #007bb6;
 }
