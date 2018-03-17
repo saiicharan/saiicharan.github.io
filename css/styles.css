@@ -2,7 +2,7 @@
 
 html, body {
   height: 100%;
-  font-family: 'Cousine', arial;
+  font-family: 'Courier New', arial;
 }
 
 a {
@@ -62,11 +62,6 @@ a {
 .github:hover {
   color: #000000;
   border-bottom: 1px solid #000000;
-}
-
-.instagram:hover {
-  color: #7f39b0;
-  border-bottom: 1px solid #7f39b0;
 }
 
 .linkedin:hover {
