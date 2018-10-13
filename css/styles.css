@@ -68,3 +68,8 @@ a {
   color: #007bb6;
   border-bottom: 1px solid #007bb6;
 }
+
+.medium:hover {
+  color: #191919;
+  border-bottom: 1px solid #191919;
+}
